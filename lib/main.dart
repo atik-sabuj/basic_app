@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.pink,
           title: const Text(
               'Basic App',
-          style: TextStyle(fontSize: 40, fontFamily: 'Pacifico'),
+          style: TextStyle(fontSize: 40, fontFamily: 'Pacifico', fontWeight: FontWeight.w600),
         ),
         ),
         body: const Center(
