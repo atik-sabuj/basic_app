@@ -9,10 +9,11 @@ void main() {
         title: Text('I am Sabuj'),
       ),
       body: const Center(
-
+        child: Image(
+          image: AssetImage('images/sabuj.jpg'),
+        ),
       ),
     ),
-
   ),
   );
 }
