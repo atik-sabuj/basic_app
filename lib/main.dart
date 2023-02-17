@@ -21,8 +21,17 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          //crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: const [
+            SizedBox(
+              height: 100,
+            ),
+            Divider(color: Colors.black,thickness: .5,),
+            SizedBox(
+              height: 100,
+              child: VerticalDivider(color: Colors.black),
+            ),
+            Divider(color: Colors.black,thickness: .5,),
             Center(
               child: CircleAvatar(
                 radius: 100,
