@@ -26,7 +26,38 @@ class MyApp extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
-                decoration: InputDecoration(),
+                keyboardType: TextInputType.emailAddress,
+                cursorColor: Colors.black,
+                enabled: true,
+                style: TextStyle(fontSize: 18, color: Colors.black),
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Colors.grey.withOpacity(0.3),
+                  prefixIcon: Icon(Icons.alternate_email),
+                  hintText: 'Email',
+                  labelText: 'Email',
+                  hintStyle: TextStyle(fontSize: 14, color: Colors.grey.shade600),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.red, width: 1),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+
+                  errorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: Colors.red, width: 1),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: Colors.teal, width: 2),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                onChanged: (value){
+                  print(value);
+                },
               ),
             ),
           ],
