@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 
-class ScreenTwo extends StatelessWidget {
-  static const String routeName ='/drawer_two';
+class ScreenTwo extends StatefulWidget {
+  static const String id ='screen_two';
   const ScreenTwo({Key? key}) : super(key: key);
 
+  @override
+  State<ScreenTwo> createState() => _ScreenTwoState();
+}
+
+class _ScreenTwoState extends State<ScreenTwo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Navigation Drawer'),
+        title: Text('Navigation Drawer - Page Two'),
         backgroundColor: Color(0xff764abc),
       ),
       body: Column(
@@ -17,7 +22,9 @@ class ScreenTwo extends StatelessWidget {
         children: [
           Center(
             child: TextButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pop(context);
+              },
               child: Text('Screen 2'),
             ),
           ),

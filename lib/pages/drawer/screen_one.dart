@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
-
 import 'screen_two.dart';
 
-class DrawerPage extends StatelessWidget {
-  static const String routeName ='/drawer';
-  const DrawerPage({Key? key}) : super(key: key);
+class ScreenOne extends StatefulWidget {
+  static const String id ='screen_one';
+  const ScreenOne({Key? key}) : super(key: key);
 
+  @override
+  State<ScreenOne> createState() => _ScreenOneState();
+}
+
+class _ScreenOneState extends State<ScreenOne> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +24,13 @@ class DrawerPage extends StatelessWidget {
           Center(
             child: TextButton(
               onPressed: (){
-                Navigator.push(
-                    context, MaterialPageRoute(
+                Navigator.pushNamed(context, ScreenTwo.id),
+/*                Navigator.push(
+                  context, MaterialPageRoute(
                     builder: (context) => ScreenTwo()),
-                );
+                );*/
               },
-                child: Text('Screen 1'),
+              child: Text('Screen 1'),
             ),
           ),
         ],
