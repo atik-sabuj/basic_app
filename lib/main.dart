@@ -23,45 +23,12 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
-              child: Stack(
-                //alignment: Alignment.center,
-                children: [
-                  Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.yellow,
-                  ),
-                  Positioned(
-                    right: 10,
-                    child: Container(
-                      height: 180,
-                      width: 180,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Positioned(
-                    //top: 10,
-                    //bottom: 10,
-                    right: 100,
-                    child: Text('Atik Sabuj'),
-                  ),
-                ],
+            Center(
+              child: CircleAvatar(
+                maxRadius: 20,
+                minRadius: 10,
+                backgroundColor: Colors.black,
               ),
-            ),
-            Stack(
-              children: [
-                Container(
-                  height: 90,
-                  width: 90,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 80,
-                  width: 80,
-                  color: Colors.red,
-                ),
-              ],
             ),
           ],
         ),
