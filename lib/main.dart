@@ -27,17 +27,24 @@ class MyApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             ListTile(
-              leading: Center(
-                child: CircleAvatar(
-                  //radius: 100,
-                  backgroundColor: Colors.black,
-                  backgroundImage: NetworkImage(
-                      'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?cs=srgb&dl=pexels-pixabay-415829.jpg&fm=jpg'),
-                ),
+              leading: CircleAvatar(
+                //radius: 100,
+                backgroundColor: Colors.black,
+                backgroundImage: NetworkImage(
+                    'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?cs=srgb&dl=pexels-pixabay-415829.jpg&fm=jpg'),
               ),
-              title: Text('Atik Sabuj'),
-              subtitle: Text('Subscribe my profile'),
+              title: Text('atik_sabuj'),
+              subtitle: Text('Follow my profile'),
               trailing: Text('08:17 PM'),
+            ),
+            Expanded(
+              flex: 3,
+              child: ListView.builder(
+                itemCount: 1000,
+                itemBuilder: (context, index){
+                  return Text('item ' +index.toString());
+                },
+              ),
             ),
           ],
         ),
