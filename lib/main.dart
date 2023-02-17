@@ -27,19 +27,26 @@ class MyApp extends StatelessWidget {
               child: Container(
                 height: 250,
                 width: 250,
-                margin: EdgeInsets.only(left: 100),
-                padding: EdgeInsets.all(20),
+                alignment: Alignment.topCenter,
                 decoration:  BoxDecoration(
                   color: Colors.orange,
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(50),
-                  ),
-                  border: Border.all(
+                  borderRadius: BorderRadius.circular(10.0),
+/*                  border: Border.all(
                     color: Colors.red,
-                    width: 2,
-                  )
+                    width: 1,
+                  ),*/
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: NetworkImage('https://images.fineartamerica.com/public/images/overview/homeDecor/bathTowels001.jpg'),
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 100,
+                    ),
+                    ],
                 ),
-                child: const Center(child: Text('Container 1')),
+                child: const Center(child: Text('Log In')),
               ),
             )
           ],
