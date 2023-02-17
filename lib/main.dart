@@ -22,22 +22,16 @@ class MyApp extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
-            SizedBox(
-              height: 100,
-            ),
-            Divider(color: Colors.black,thickness: .5,),
-            SizedBox(
-              height: 100,
-              child: VerticalDivider(color: Colors.black),
-            ),
-            Divider(color: Colors.black,thickness: .5,),
-            Center(
-              child: CircleAvatar(
-                radius: 100,
-                backgroundColor: Colors.black,
-                //child: Icon(Icons.person),
-                backgroundImage: NetworkImage('https://pixels.com/images/overview/apparel/mensTshirts002.jpg'),
+          children: [
+            RichText(
+              text: TextSpan(
+                text: 'Hello',
+                style: Theme.of(context).textTheme.bodySmall,
+                children: [
+                  TextSpan(text: 'Modern', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),
+                  TextSpan(text: 'World', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 24),),
+
+                ],
               ),
             ),
           ],
