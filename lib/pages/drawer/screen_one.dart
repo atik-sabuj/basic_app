@@ -17,6 +17,17 @@ class _ScreenOneState extends State<ScreenOne> {
         title: Text('Navigation Drawer'),
         backgroundColor: Color(0xff764abc),
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(child: Text('Atik Sabuj')),
+            UserAccountsDrawerHeader(
+                accountName: Text('Atikuzzaman Sabuj'),
+                accountEmail: Text('sabuj235@gmail.com'),
+            ),
+          ],
+        ),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,7 +35,7 @@ class _ScreenOneState extends State<ScreenOne> {
           Center(
             child: TextButton(
               onPressed: (){
-                Navigator.pushNamed(context, ScreenTwo.id),
+                Navigator.pushNamed(context, ScreenTwo.id);
 /*                Navigator.push(
                   context, MaterialPageRoute(
                     builder: (context) => ScreenTwo()),
