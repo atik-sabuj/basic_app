@@ -20,13 +20,20 @@ class _ScreenTwoState extends State<ScreenTwo> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(
-            child: TextButton(
-              onPressed: (){
-                Navigator.pop(context);
-              },
-              child: Text('Screen 2'),
-            ),
+          Expanded(
+            child: ListView.builder(
+                itemCount: 100,
+                itemBuilder: (context, index){
+                  return ListTile(
+                    leading: CircleAvatar(
+                      backgroundImage: AssetImage('images/sabuj.jpg'),
+                    ),
+                    title: Text('atik_sabuj'),
+                    onTap: (){
+                      Navigator.pushNamed(context, ScreenTwo.id);
+                    },
+                  );
+                }),
           ),
         ],
       ),
