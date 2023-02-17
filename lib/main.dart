@@ -23,18 +23,10 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Center(
-              child: RichText(
-                text: TextSpan(
-                  text: 'Dont Have an Account?',
-                  style: Theme.of(context).textTheme.bodySmall,
-                  //style: Theme.of(context).textTheme.bodySmall!.copyWith(fontSize: 50),
-                  children: [
-                    TextSpan(text: 'Sign Up', style: TextStyle(decoration: TextDecoration.underline,fontWeight: FontWeight.bold, fontSize: 18),),
-                    //TextSpan(text: 'World', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 24),),
-
-                  ],
-                ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextFormField(
+                decoration: InputDecoration(),
               ),
             ),
           ],
