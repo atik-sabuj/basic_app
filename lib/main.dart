@@ -19,10 +19,15 @@ class MyApp extends StatelessWidget {
           style: TextStyle(fontSize: 40, fontFamily: 'Pacifico', fontWeight: FontWeight.w600),
         ),
         ),
-        body: const Center(
-          child: Image(
-            image: AssetImage('images/fp.jpg'),
-          ),
+        body: Column(
+          children: [
+            Container(
+              height: 100,
+              width: 180,
+              color: Colors.green,
+              child: Center(child: Text('Container 1')),
+            )
+          ],
         ),
       ),
     );
