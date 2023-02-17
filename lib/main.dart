@@ -1,5 +1,6 @@
-import 'package:basic_app/pages/drawer.dart';
+import 'package:basic_app/pages/drawer/drawer.dart';
 import 'package:flutter/material.dart';
+import 'pages/drawer/screen_two.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: DrawerPage.routeName,
       routes: {
         DrawerPage.routeName:(context)=>DrawerPage(),
+        ScreenTwo.routeName:(context)=>ScreenTwo(),
       },
     );
   }
