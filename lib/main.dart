@@ -22,12 +22,13 @@ class MyApp extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
+          children: const [
             Center(
               child: CircleAvatar(
-                maxRadius: 20,
-                minRadius: 10,
+                radius: 100,
                 backgroundColor: Colors.black,
+                //child: Icon(Icons.person),
+                backgroundImage: NetworkImage('https://pixels.com/images/overview/apparel/mensTshirts002.jpg'),
               ),
             ),
           ],
