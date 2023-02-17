@@ -6,6 +6,19 @@ class DrawerPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Navigation Drawer'),
+        backgroundColor: Color(0xff74abc),
+      ),
+      body: Column(
+        children: [
+          TextButton(
+            onPressed: (){},
+              child: Text('Screen 1'),
+          ),
+        ],
+      ),
+    );
   }
 }
