@@ -23,36 +23,24 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Expanded(
-              flex: 2,
-              child: Container(
-                color: Colors.red,
-                height: 250,
-                child: Center(child: Text('Container 1')),
-              ),
-            ),
-
-            Expanded(
-              flex: 3,
-              child: Center(
-                child: Container(
-                  decoration:  BoxDecoration(
-                    color: Colors.orange,
-                    borderRadius: BorderRadius.circular(10.0),
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage('https://images.fineartamerica.com/public/images/overview/homeDecor/bathTowels001.jpg'),
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 100,
-                      ),
-                      ],
-                  ),
-                  child: const Center(child: Text('Log In')),
+            Stack(
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.yellow,
                 ),
-              ),
+                Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.blue,
+                ),
+                Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.red,
+                ),
+              ],
             ),
           ],
         ),
