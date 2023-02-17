@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.pink,
           title: const Text(
@@ -20,12 +20,27 @@ class MyApp extends StatelessWidget {
         ),
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          //crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-              height: 100,
-              width: 180,
-              color: Colors.green,
-              child: Center(child: Text('Container 1')),
+            Center(
+              child: Container(
+                height: 250,
+                width: 250,
+                margin: EdgeInsets.only(left: 100),
+                padding: EdgeInsets.all(20),
+                decoration:  BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(50),
+                  ),
+                  border: Border.all(
+                    color: Colors.red,
+                    width: 2,
+                  )
+                ),
+                child: const Center(child: Text('Container 1')),
+              ),
             )
           ],
         ),
