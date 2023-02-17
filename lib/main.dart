@@ -15,50 +15,29 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.pink,
           title: const Text(
-              'Basic App',
-          style: TextStyle(fontSize: 40, fontFamily: 'Pacifico', fontWeight: FontWeight.w600),
-        ),
+            'Basic App',
+            style: TextStyle(
+                fontSize: 40,
+                fontFamily: 'Pacifico',
+                fontWeight: FontWeight.w600),
+          ),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextFormField(
-                keyboardType: TextInputType.emailAddress,
-                cursorColor: Colors.black,
-                enabled: true,
-                style: TextStyle(fontSize: 18, color: Colors.black),
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: Colors.grey.withOpacity(0.3),
-                  prefixIcon: Icon(Icons.alternate_email),
-                  hintText: 'Email',
-                  labelText: 'Email',
-                  hintStyle: TextStyle(fontSize: 14, color: Colors.grey.shade600),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.red, width: 1),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-
-                  errorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                        color: Colors.red, width: 1),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                        color: Colors.teal, width: 2),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
+            ListTile(
+              leading: Center(
+                child: CircleAvatar(
+                  //radius: 100,
+                  backgroundColor: Colors.black,
+                  backgroundImage: NetworkImage(
+                      'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?cs=srgb&dl=pexels-pixabay-415829.jpg&fm=jpg'),
                 ),
-                onChanged: (value){
-                  print(value);
-                },
               ),
+              title: Text('Atik Sabuj'),
+              subtitle: Text('Subscribe my profile'),
+              trailing: Text('08:17 PM'),
             ),
           ],
         ),
@@ -66,16 +45,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 //Source Code:
 /*
@@ -127,7 +96,6 @@ class MyApp extends StatelessWidget {
 }
 */
 
-
 // text form field widget source code
 
 // Padding(
@@ -163,8 +131,6 @@ class MyApp extends StatelessWidget {
 // },
 // ),
 // )
-
-
 
 // rich text sign up code
 // Center(
@@ -215,7 +181,6 @@ class MyApp extends StatelessWidget {
 // ],
 // ),
 
-
 //container widget code
 
 // Center(
@@ -244,7 +209,6 @@ class MyApp extends StatelessWidget {
 // child: Center(child: Text('Login 1')),
 // ),
 // )
-
 
 //stack widget source code
 
