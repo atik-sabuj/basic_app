@@ -23,6 +23,33 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Row(
+              children: [
+                Center(
+                  child: Container(
+                    height: 250,
+                    width: 250,
+                    //transform: Matrix4.rotationZ(.2),
+                    decoration:  BoxDecoration(
+                      color: Colors.orange,
+                      borderRadius: BorderRadius.circular(10.0),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage('https://images.fineartamerica.com/public/images/overview/homeDecor/bathTowels001.jpg'),
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 100,
+                        ),
+                      ],
+                    ),
+                    child: const Center(child: Text('Log In')),
+                  ),
+                ),
+              ],
+            ),
+
             Center(
               child: Container(
                 height: 250,
@@ -44,7 +71,7 @@ class MyApp extends StatelessWidget {
                 ),
                 child: const Center(child: Text('Log In')),
               ),
-            )
+            ),
           ],
         ),
       ),
