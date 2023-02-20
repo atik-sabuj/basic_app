@@ -22,8 +22,7 @@ class _ScreenOneState extends State<ScreenOne> {
           padding: EdgeInsets.zero,
           children: [
             //DrawerHeader(child: Text('atik_sabuj')),
-            UserAccountsDrawerHeader(
-
+            const UserAccountsDrawerHeader(
               decoration: BoxDecoration(
                 color: Color(0xff764abc),
               ),
