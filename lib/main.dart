@@ -1,3 +1,4 @@
+import 'package:basic_app/pages/pub.dart';
 import 'package:flutter/material.dart';
 import 'pages/drawer/screen_one.dart';
 import 'pages/drawer/screen_two.dart';
@@ -19,11 +20,13 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
 
-      initialRoute: ScreenOne.id,
+      home: const PubPage(),
+
+/*      initialRoute: ScreenOne.id,
       routes: {
         ScreenOne.id:(context)=>ScreenOne(),
         ScreenTwo.id:(context)=>ScreenTwo(),
-      },
+      },*/
     );
   }
 }
