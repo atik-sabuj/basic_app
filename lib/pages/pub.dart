@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PubPage extends StatefulWidget {
@@ -19,9 +20,8 @@ class _PubPageState extends State<PubPage> {
           /*mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,*/
           children: [
-            Icon(Icons.chat_bubble),
-            Icon(Icons.add),
-            Icon(Icons.home_filled),
+            Icon(Icons.home),
+            Icon(CupertinoIcons.home),
           ],
         ),
       ),
