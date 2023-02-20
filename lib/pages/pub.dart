@@ -17,6 +17,15 @@ class _PubPageState extends State<PubPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Pub Page'),
+        actions: [
+          Center(
+              child:badges.Badge(
+                badgeContent: Text('4'),
+                child: Icon(Icons.shopping_cart_checkout_outlined),
+              )
+          ),
+          SizedBox(width: 20,),
+        ],
       ),
       body: SafeArea(
         child: Column(
@@ -25,13 +34,10 @@ class _PubPageState extends State<PubPage> {
           children: [
             Center(
                 child:badges.Badge(
-                  //showBadge: true,
-                  //shape: badges.BadgeShape.square,
-              //borderRadius: BorderRadius.circular(8),
-                  //animationDuration : Duration(seconds: 3),
-              badgeContent: Text('Messages'),
+                badgeContent: Text('4'),
+                  child: Icon(Icons.shopping_cart_checkout_outlined),
             )
-            )
+            ),
           ],
         ),
       ),
