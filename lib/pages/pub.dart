@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class PubPage extends StatefulWidget {
   const PubPage({Key? key}) : super(key: key);
@@ -20,8 +21,10 @@ class _PubPageState extends State<PubPage> {
           /*mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,*/
           children: [
-            Icon(Icons.home),
-            Icon(CupertinoIcons.home),
+            Icon(FontAwesomeIcons.searchengin),
+            Icon(FontAwesomeIcons.home),
+            Icon(FontAwesomeIcons.addressCard),
+            Icon(FontAwesomeIcons.angleDown),
           ],
         ),
       ),
