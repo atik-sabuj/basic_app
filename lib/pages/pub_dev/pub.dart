@@ -42,6 +42,9 @@ class _PubPageState extends State<PubPage> {
                   appContext: context,
                   length: 6,
                   keyboardType: TextInputType.number,
+                  cursorColor: Colors.teal,
+                  obscureText: true,
+                  obscuringCharacter: '@',
                   pinTheme: PinTheme(
                     shape: PinCodeFieldShape.box,
                         borderRadius: BorderRadius.circular(10),
