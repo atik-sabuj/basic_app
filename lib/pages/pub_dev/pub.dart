@@ -40,12 +40,20 @@ class _PubPageState extends State<PubPage> {
             )
             ),
             SizedBox(width: 10,),
-            AnimatedTextKit(animatedTexts: [
+            /*AnimatedTextKit(animatedTexts: [
               FadeAnimatedText(
                 'Sabuj Atik Tec',
               ),
             ],
               totalRepeatCount: 3,
+            )*/
+            AnimatedTextKit(animatedTexts: [
+              RotateAnimatedText(
+                'Sabuj Atik Tec',
+                textStyle: TextStyle(fontSize: 50,),
+              ),
+            ],
+              totalRepeatCount: 10,
             )
           ],
         ),
