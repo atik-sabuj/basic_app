@@ -90,6 +90,25 @@ class _PubPageState extends State<PubPage> {
                 ),
               ),
             ),
+            SizedBox(
+              width: 250.0,
+              child: DefaultTextStyle(
+                style: const TextStyle(
+                  fontSize: 70.0,
+                  fontFamily: 'Canterbury',
+                ),
+                child: AnimatedTextKit(
+                  animatedTexts: [
+                    ScaleAnimatedText('Think'),
+                    ScaleAnimatedText('Build'),
+                    ScaleAnimatedText('Ship'),
+                  ],
+                  onTap: () {
+                    print("Tap Event");
+                  },
+                ),
+              ),
+            )
           ],
         ),
       ),
