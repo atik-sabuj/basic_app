@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:readmore/readmore.dart';
 import 'package:badges/badges.dart' as badges;
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class PubPage extends StatefulWidget {
   const PubPage({Key? key}) : super(key: key);
@@ -38,6 +39,14 @@ class _PubPageState extends State<PubPage> {
                   child: Icon(Icons.shopping_cart_checkout_outlined),
             )
             ),
+            SizedBox(width: 10,),
+            AnimatedTextKit(animatedTexts: [
+              FadeAnimatedText(
+                'Sabuj Atik Tec',
+              ),
+            ],
+              totalRepeatCount: 3,
+            )
           ],
         ),
       ),

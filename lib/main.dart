@@ -1,4 +1,4 @@
-import 'package:basic_app/pages/pub.dart';
+import 'package:basic_app/pages/pub_dev/pub.dart';
 import 'package:flutter/material.dart';
 import 'pages/drawer/screen_one.dart';
 import 'pages/drawer/screen_two.dart';
