@@ -16,16 +16,18 @@ class _PubPageState extends State<PubPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.teal,
       appBar: AppBar(
         title: Text('Pub Page'),
         actions: [
           Center(
-              child:badges.Badge(
-                badgeContent: Text('4'),
-                child: Icon(Icons.shopping_cart_checkout_outlined),
-              )
+              child: badges.Badge(
+            badgeContent: Text('4'),
+            child: Icon(Icons.shopping_cart_checkout_outlined),
+          )),
+          SizedBox(
+            width: 20,
           ),
-          SizedBox(width: 20,),
         ],
       ),
       body: SafeArea(
@@ -34,27 +36,60 @@ class _PubPageState extends State<PubPage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Center(
-                child:badges.Badge(
-                badgeContent: Text('4'),
-                  child: Icon(Icons.shopping_cart_checkout_outlined),
-            )
+                child: badges.Badge(
+              badgeContent: Text('4'),
+              child: Icon(Icons.shopping_cart_checkout_outlined),
+            )),
+            SizedBox(
+              width: 10,
             ),
-            SizedBox(width: 10,),
-            /*AnimatedTextKit(animatedTexts: [
-              FadeAnimatedText(
-                'Sabuj Atik Tec',
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    const SizedBox(width: 20.0, height: 100.0),
+                    const Text(
+                      'Be',
+                      style: TextStyle(fontSize: 43.0),
+                    ),
+                    const SizedBox(width: 20.0, height: 100.0),
+                    DefaultTextStyle(
+                      style: const TextStyle(
+                        fontSize: 40.0,
+                        fontFamily: 'Horizon',
+                      ),
+                      child: AnimatedTextKit(
+                        animatedTexts: [
+                          RotateAnimatedText('AWESOME'),
+                          RotateAnimatedText('OPTIMISTIC'),
+                          RotateAnimatedText('DIFFERENT'),
+                        ],
+                        onTap: () {
+                          print("Tap Event");
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+            SizedBox(
+              width: 250.0,
+              child: DefaultTextStyle(
+                style: const TextStyle(
+                  fontSize: 30.0,
+                  fontFamily: 'Bobbers',
+                ),
+                child: AnimatedTextKit(
+                  animatedTexts: [
+                    TyperAnimatedText('It is not enough to do your best,'),
+                    TyperAnimatedText('you must know what to do,'),
+                    TyperAnimatedText('and then do your best'),
+                    TyperAnimatedText('- W.Edwards Deming'),
+                  ],
+                  onTap: () {
+                    print("Tap Event");
+                  },
+                ),
               ),
-            ],
-              totalRepeatCount: 3,
-            )*/
-            AnimatedTextKit(animatedTexts: [
-              RotateAnimatedText(
-                'Sabuj Atik Tec',
-                textStyle: TextStyle(fontSize: 50,),
-              ),
-            ],
-              totalRepeatCount: 10,
-            )
+            ),
           ],
         ),
       ),
