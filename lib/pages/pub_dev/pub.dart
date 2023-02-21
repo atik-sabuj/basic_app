@@ -44,12 +44,24 @@ class _PubPageState extends State<PubPage> {
                   keyboardType: TextInputType.number,
                   cursorColor: Colors.teal,
                   obscureText: true,
-                  obscuringCharacter: '@',
+                  enabled: true,
+                  //obscuringCharacter: '@',
                   pinTheme: PinTheme(
                     shape: PinCodeFieldShape.box,
                         borderRadius: BorderRadius.circular(10),
                     fieldHeight: 50,
                     fieldWidth: 40,
+
+                    activeColor: Colors.grey,
+                    inactiveFillColor: Colors.grey,
+
+                    inactiveColor: Colors.grey,
+
+                    selectedColor: Colors.pink,
+
+                    activeFillColor: Colors.purple.shade600,
+                    selectedFillColor: Colors.red,
+
                   ),
                   onChanged: (value){
 
